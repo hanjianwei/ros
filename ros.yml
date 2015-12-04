@@ -1,0 +1,7 @@
+---
+- hosts: ros
+  connection: paramiko
+  gather_facts: no
+  tasks:
+    - name: test
+      raw: :put hello
